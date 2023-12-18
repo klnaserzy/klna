@@ -1,0 +1,49 @@
+#main{
+  background-color:#DDDDDD;
+  padding: 10px;
+  margin: 30px 0px;
+  border-radius: 5px;
+}
+
+h1, p, h3{
+  text-align: center;
+}
+
+h3{
+  margin: 50px 0 25px 0; 
+}
+
+#img-caption p{
+  text-indent: 1.2rem;
+}
+
+#img-div{
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 10px 10px;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+img{
+  margin:0 auto;
+  display: block;
+  max-width: 100%;
+}
+
+#tribute-info-block{
+  max-width: 550px;
+  margin: 30px auto;
+}
+
+ul li{
+  margin: 20 0;
+}
+
+
+a:hover{
+  
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}
