@@ -1,323 +1,68 @@
-*{
-  font-family: sans-serif;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <link href='./styles.css' rel='stylesheet'>
+    <title>Hey I am Mimic</title>
+  </head>
 
-:root{
-  --title-font-color: rgb(200, 200, 200);
-  --background-darker-excessive-color: #232323;
-  --background-lighter-excessive-color: #343434;
-}
-
-a{
-  text-decoration: none;
-}
-
-body{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-#welcome-section{
-  width: 100%;
-  height: 100vh;
-  background-color:#444;
-  animation:5s linear infinite;
-  animation-name: first-background;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  
-}
-
-.welcome-content{
-  background-color: rgba(100, 100, 100, 0.3);
-  padding: 5px 30px;
-  border-radius: 100px 0 100px 0;
-}
-
-.first-h1{
-  color: var(--title-font-color);
-  text-align: center;
-  font-size: 64px;
-  margin-bottom: 0px;
-  white-space: nowrap;
-}
-
-.i-am{
-  font-size: 32px;
-  margin: 0 0 0 3vw;
-  padding: 0;
-  color: rgb(180, 180, 60);
-}
-
-#navbar{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: rgba(34, 34, 34, 0.9);
-}
-
-#navlists{
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  margin: 0;
-}
-
-.navlist{
-  display: inline;
-  list-style-type: none;
-  font-size: 32px;
-  margin: 25px 0;
-  height: 100%;
-}
-
-.navlink{
-  color: rgb(180, 0, 180);
-  margin: 0;
-  padding: 25px;
-  width: 100%;
-  height: 100%;
-}
-
-.navlink:hover{
-  background-color: #111;
-  border-radius: 30px 30px 30px 30px;
-}
-
-.navlink:active{
-  color: rgb(230, 30, 30);
-}
-
-#projects{
-  width: 100%;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0 0 80px 0;
-  background: linear-gradient(var(--background-darker-excessive-color) 0%, var(--background-lighter-excessive-color) 30%, rgb(107, 203, 190));
-}
-
-.projects-title{
-  text-align: center;
-  width: 650px;
-  font-size: 42px;
-  text-decoration: underline;
-  border-bottom: 4px solid var(--title-font-color);
-  color: var(--title-font-color);
-  margin: 0 auto;
-  padding-top: 150px;
-}
-
-.project-tile{
-  background: rgb(52, 52, 52, 0.2);
-  max-width: 1100px;
-  width: 80%;
-  
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 70px auto;
-  padding: 30;
-}
-
-.store-img{
-  width: 400px;
-  height: 500px;
-  margin: 30px 20px 50px 20px;
-  padding-bottom: 60px;
-  background: rgb(52, 52, 52, 0.6);
-  border-radius: 10px;
-}
-
-.show-img{
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-}
-
-.img-link{
-  padding: 0;
-  margin: 0;
-}
-
-.describe-img{
-  text-align: center;
-  font-size: 24px;
-  margin: 15px;
-  color: #d2d2d2;
-}
-
-
-.show-more-button{
-  color: #c2c2c2;
-  width: 190px;
-  height: 60px;
-  font-size: 30px;
-  display: block;
-  margin: 0 auto;
-  border: 0;
-  background: rgba(42, 42, 42, 0.7);
-  transition: background 0.3s ease-out;
-}
-
-.show-more-button:hover{
-  background: rgba(155, 96, 45, 0.9);
-  cursor: pointer;
-}
-
-.show-more-button:active{
-  color: #eee;
-}
-
-#cooperate-page{
-  width: 100%;
-  height: 80vh;
-  min-height: 500px;
-  background: linear-gradient(rgb(127, 223, 210), rgba(155, 96, 45, 0.9));
-}
-
-.cooperate-h1{
-  text-align: center;
-  margin: 0;
-  padding: 200px 0 5px 0px;
-  font-size: 64px;
-  white-space: nowrap;
-  color: #333;
-}
-
-.cooperate-p{
-  width: 50%;
-  text-align: right;
-  font-size: 24px;
-  padding: 0;
-  margin: 0 auto;
-  white-space: nowrap;
-  color: rgba(130, 0, 180, 0.6);
-}
-
-.contact-information{
-  width: 80%;
-  margin: 80px auto;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.contact-way{
-  transition: transform 0.3s;
-  white-space: nowrap;
-  margin: 0 15px;
-}
-
-.contact-way:hover{
-  transform: translateY(16px);
-}
-
-.contact-link{
-  font-size: 28px;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-
-footer{
-  height: 12vh;
-  width: 100%;
-  background: rgba(160, 101, 50, 0.9);
-
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.footer-p{
-  margin: 0;
-  font-size: 18px;
-}
-
-
-@media only screen and (max-width: 900px){
-  .first-h1{
-    font-size: 48px;
-  }
-  .i-am{
-    font-size: 24px;
-  }
-  .navlist{
-    font-size: 24px;
-    margin: 15px 0;
-  }
-  .navlink{
-    padding: 15px 20px;
-  }
-  .projects-title{
-    font-size: 32;
-    width: 470px;
-  }
-  .cooperate-h1{
-    font-size: 48px;
-  }
-  .cooperate-p{
-    font-size: 18px;
-    width: 70%;
-  }
-  .contact-link{
-    font-size: 21px;
-  }
-  .footer-p{
-    font-size: 13px;
-  }
-}
-
-@media only screen and (max-width: 660px){
-  .first-h1{
-    font-size: 36px;
-  }
-  .i-am{
-    font-size: 20px;
-  }
-  .projects-title{
-    font-size: 24;
-    width: 353px;
-  }
-  .store-img{
-    margin: 0 5px, 0 5px;
-    width: 80%;
-    height: auto;
-  }
-  .project-tile{
-    padding: 0px;
-  }
-  .contact-information{
-    display: block;
-  }
-  .contact-way{
-    text-align: center;
-    margin: 15px 0;
-  }
-  .contact-way:hover{
-    transform: translateX(15px);
-  }
-}
-
-@media only screen and (max-width: 520px){
-  .first-h1{
-    font-size: 24px;
-  }
-  .i-am{
-    font-size: 16px;
-  }
-}
-
-@keyframes first-background{
-  0%  { background-color: var(--background-darker-excessive-color); }
-  25% {background-color: var(--background-lighter-excessive-color); }
-  40% {background-color: #222; }
-  60% {background-color: #222; }
-  75% {background-color: var(--background-lighter-excessive-color); }
-  100% {background-color: var(--background-darker-excessive-color); }
-}
+  <body>
+    <nav id='navbar'>
+      <ul id='navlists'>
+        <li class='navlist'><a class='navlink' href='#welcome-section'>About</a></li>
+        <li class='navlist'><a class='navlink' href='#projects'>Work</a></li>
+        <li class='navlist'><a class='navlink' href='#cooperate-page'>Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div id='welcome-section'>
+        <div class='welcome-content'>
+          <h1 class='first-h1'>Hello I am promise yellow</h1>
+          <p class='i-am'><i>a web developer</i></p>
+        </div>
+      </div>
+      <div id='projects'>
+        <h1 class='projects-title'>These are some of my projects</h1>
+        <div class='project-tile'>
+          <div class='store-img'>
+            <a class='img-link' href='https://klnaserzy.github.io/klna.github.io/技術文檔頁面/index.html' target='_blank'><img class='show-img' src='https://klnaserzy.github.io/klna.github.io/技術文檔頁面/img.png' alt='Survey Form'></a>
+            <p class='describe-img'>Survey Form</p>
+          </div>
+          <div class='store-img'>
+            <a class='img-link' href='https://klnaserzy.github.io/klna.github.io/產品登錄頁/index.html' target='_blank'><img class='show-img' src='https://klnaserzy.github.io/klna.github.io/產品登錄頁/img.png' alt='Tribute Page'></a>
+            <p class='describe-img'>Tribute Page</p>
+          </div>
+          <div class='store-img'>
+            <a class='img-link' href='https://klnaserzy.github.io/klna.github.io/致敬頁/index.html' target='_blank'><img class='show-img' src='https://klnaserzy.github.io/klna.github.io/致敬頁/img.png' alt='Technical Documentation'></a>
+            <p class='describe-img'>Technical Documentation</p>
+          </div>
+          <div class='store-img'>
+            <a class='img-link' href='https://klnaserzy.github.io/klna.github.io/調查表單/index.html' target='_blank'><img class='show-img' src='https://klnaserzy.github.io/klna.github.io/調查表單/img.png' alt='Product Landing'></a>
+            <p class='describe-img'>Product Landing</p>
+          </div>
+        </div>
+        <a href='https://github.com/klnaserzy/klna.github.io' class='show-more-link'  target='_blank'>
+          <button class='show-more-button'>Show more</button>
+        </a>
+      </div>
+      <div id='cooperate-page'>
+        <div class='cooperate-text'>
+          <h1 class='cooperate-h1'>Let's Work together</h1>
+          <p class='cooperate-p'><i>i like to drink in the morning</i></p>
+        </div>
+        <div class='contact-information'>
+          <div class='contact-way'><a class='contact-link' href='https://www.facebook.com/klnaserzy/' target='_blank'>Face Book</a></div>
+          <div class='contact-way'><a id='profile-link' class='contact-link' href='https://github.com/klnaserzy' target='_blank'>Github</a></div>
+          <div class='contact-way'><a class='contact-link' href='https://twitter.com/forfunuserk' target='_blank'>Twitter</a></div>
+          <div class='contact-way'><a class='contact-link' href='mailto:klnaserzy@gmail.com'>Send a mail</a></div>
+          <div class='contact-way'><a class='contact-link' href='tel:27702117' target='_blank'>Call me</a></div>
+        </div>
+      </div>
+      <footer>
+        <p class='footer-p'>I do this for practice. All of my projects in the 'Work' are learned from FreeCodeCamp.</p>
+        <p class='footer-p'>Created for myself</p>
+      </footer>
+    </main>
+  </body>
+</html>
