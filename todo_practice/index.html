@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width initial-scale=1.0" />
+        <title>todo list</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id="left-fix-container">
+            <div id="fillInTodo">
+                <form>
+                    <p class="instruction">Title: </p>
+                    <input id="todoInput" type="text" placeholder="something title" required/>
+                    <p class="instruction">Describe: </p>
+                    <textarea id="describe" placeholder="describe..." rows="5"></textarea>
+                    <p class="instruction">Date (dead line): </p>
+                    <input id="deadLine" type="date" />
+                    <button id="addTodoBtn">add todo</button>
+                </form>
+            </div>
+            <div id="leastEvents">
+                least time event:
+                <div id="events">
+                    <span class="event" onclick="alert('skd');">wqer</span>
+                    <span class="event">2weqrwew</span>
+                    <span class="event">ewe</span>
+                    <span class="event">qwsdfsdfsfeqrweewwsdfsdfsfeqrweewwsdfsdfsfeqrweewfdghfgdhr</span>
+                    <span class="event">qwsdfsdfsfeqrweewwsdfsdfsfeqrweewwsdfsdfsfeqrweewfdghfgdhr</span>
+                    <span class="event">qwsdfsdfsfeqrweewwsdfsdfsfeqrweewwsdfsdfsfeqrweewfdghfgdhr</span>
+                    <span class="event">qwsdfsdfsfeqrweewwsdfsdfsfeqrweewwsdfsdfsfeqrweewfdghfgdhr</span>
+                    <span class="event">2weqrwew</span>
+                    <span class="event">ewe</span>
+                </div>
+            </div>
+        </div>
+        <div id="yearMon" class="timeContainer1"></div>
+        <div id="nowDate" class="timeContainer2">00:00:00</div>
+        <div id="todoList">
+            <p class="instruction">Your list:</p>
+            <div id="list">
+                <table>
+                    <thead>
+                        <tr>
+                            <td width="15%">title</td>
+                            <td width="30%">date</td>
+                            <td width="50%">describe</td>
+                            <td width="5%">delete</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="a">a</td>
+                            <td onclick="alert('sadf');">2000/12/10</td>
+                            <td>c</td>
+                            <td class="deleteBtn"><button id="deletTodo">delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>d</td>
+                            <td>e</td>
+                            <td>f</td>
+                            <td class="deleteBtn"><button id="deletTodo">delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>g</td>
+                            <td>h</td>
+                            <td>i</td>
+                            <td class="deleteBtn"><button id="deletTodo">delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>j</td>
+                            <td>k</td>
+                            <td>l</td>
+                            <td class="deleteBtn"><button id="deletTodo">delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
