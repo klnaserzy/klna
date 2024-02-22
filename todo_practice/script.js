@@ -2,14 +2,22 @@ const nowDate = document.getElementById("nowDate");
 const yearMon = document.getElementById("yearMon");
 const allMonth = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"] 
 const backgroundImagePath = [
-    "./background_image/pexels-photo-15061262.jpg",
-    "./background_image/pexels-photo-14945266.jpeg",
-    "./background_image/pexels-photo-15035394.jpeg",
-    "./background_image/pexels-photo-15233789.jpeg",
+    "./background_image/pexels-photo-15061262.jpg"
 ]
 
 const get_backgroundImagePath = () => {
-
+    fetch('./background_image_path.json')  //背景網址
+    .then(response => {
+        const data = response.json()
+        return data;
+    })
+    .then(data => {
+        const {imageUrls} = data;
+        backgroundImagePath.push(...imageUrls);
+    })
+    .catch(error=> {
+        console.log("error: ", error);
+    });
 }
 
 const update_time_and_background = () => {
@@ -24,6 +32,7 @@ const update_time_and_background = () => {
 
     yearMon.textContent = `${allMonth[month]} ${date}, ${year}`
 
+    //更新時鐘
     setInterval(() => {
         const update_time_per_second = () => {
             const now = new Date();
@@ -57,6 +66,7 @@ const update_time_and_background = () => {
     }, 1000);
 }
 
+get_backgroundImagePath();
 update_time_and_background();
 
 const a = document.getElementById("a");
