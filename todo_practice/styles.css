@@ -21,7 +21,7 @@ body {
     position: fixed;
     top: 10%;
     left: 5%;
-    width: 30%;
+    width: 25%;
     min-width: 300px;
 }
 
@@ -114,7 +114,8 @@ body {
 
 #leastEvents {
     width: 100%;
-    max-height: 152px;
+    max-height: 158px;
+    max-height: 158px;
     background-color: #999999cc;
     padding: 25px 40px;
     border-radius: 20px;
@@ -127,10 +128,11 @@ body {
 #events {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 7px;
 }
 
 .event {
-    background-color: #999;
+    background-color: #777;
     border: 0px;
     border-radius: 10px;
     font-size: 1em;
@@ -146,11 +148,11 @@ body {
 
 .event:hover {
     cursor: pointer;
-    background-color: #bbb;
+    background-color: #999;
 }
 
 #yearMon {
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 85%;
     font-size: 16px;
     letter-spacing: 1px;
@@ -163,12 +165,6 @@ body {
     letter-spacing: 1px;
     color: #fff;
 }
-
-#todoTitle {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #fff;
-}   
 
 .timeContainer1 {
     background-color:#31313181;
@@ -183,10 +179,10 @@ body {
 }
 
 #todoList {
-    margin-left: 47%;
-    margin-top: 10px;
+    margin-left: 40%;
+    margin-top: 25px;
     background-color: #31313181;
-    width: 45%;
+    width: 55%;
     min-width: 550px;
     padding: 20px;
     border-radius: 20px;
@@ -201,6 +197,28 @@ table {
     text-align: right;
 }
 
+select {
+    appearance:none;
+    border: none;
+    background-color: #999;
+    color: #eee;
+    font-size: 0.9em;
+    line-height: 1.7em;
+    text-align: right;
+    width: 100%;
+    height: auto;
+    transition: background-color .1s ease-in-out;
+}
+
+select:focus {
+    outline: none;
+}
+
+select:hover {
+    cursor: pointer;
+    background-color: #444;
+}
+
 thead td {
     background: #888;
     height: 50px;
@@ -213,6 +231,12 @@ tbody td {
     padding: 5px 10px;
     border-bottom: 1px solid #333;
 
+    transition: background-color .1s ease-in-out;
+}
+
+/*最後一項*/
+tbody tr td:nth-child(4) {
+    padding: 0px;
     transition: background-color .1s ease-in-out;
 }
 
