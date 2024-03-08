@@ -41,7 +41,7 @@ window.onload = function() {
 
 // 練習fetch 當未能從 Pexels 獲取圖片時，從本地 JSON 文件中獲取
 const get_backgroundImagePath = () => {
-    fetch('./background_image_path.json')  //背景json檔案 其實數量不多可以直接用陣列儲存
+    fetch('https://github.com/klnaserzy/klna.github.io/tree/main/todo_practice1/background_image')  //背景json檔案 其實數量不多可以直接用陣列儲存
         .then(response => response.json())
         .then(data => {
             const {imageDatas} = data;
