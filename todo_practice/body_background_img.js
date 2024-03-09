@@ -113,7 +113,7 @@ const update_time_and_background = () => {
 
     }, 1000); // 設定每秒執行一次
 }
-
+get_backgroundImagePath();
 update_time_and_background(); // 呼叫更新時間和背景函數
 
 
