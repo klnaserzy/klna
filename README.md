@@ -1,3 +1,3 @@
 # title
-for practice
-every exercise has a url link!
+練習用
+每一個都有附url
