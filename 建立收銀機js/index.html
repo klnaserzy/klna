@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <title>Cash Register Project</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="content">
+            <h1>Cash Register Project</h1>
+            <div id="change-due" class="change-due"></div>
+            <p class="enter-instruction">Enter cash from customer:</p>
+            <input id="cash" class="cash" type="text" placeholder="999.99"/>
+            <button id="purchase-btn" class="purchase-btn"><span>Purchase</span></button>
+            <div class="cash-register">
+                <p id="price" class="price">Total: $3.26</p>
+                <div class="cash-pillar"></div>
+                <div class="cash-controler">
+                    <div class="number-btns">
+                        <div class="number-btn"></div>
+                        <div class="number-btn"></div>
+                        <div class="number-btn"></div>
+                        <div class="number-btn"></div>
+                        <div class="number-btn"></div>
+                        <div class="number-btn"></div>
+                        <div class="number-btn"></div>
+                        <div class="number-btn"></div>
+                        <div class="number-btn"></div>
+                    </div>
+                    <div id="register-drawer" class="register-drawer">
+                    </div>
+                </div>
+                <div class="cash-register-base">
+                    <div class="cash-handle"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
+
+
