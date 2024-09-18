@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+.phone {
+    width: 300px;
+    height: 530px;
+    background-color: #000;
+    margin: 0 auto;
+    padding: 20px 0px;
+    border-radius: 20px
+}
+
+.camera {
+    width: 15px;
+    height: 15px;
+    margin: 0 auto 20px auto;
+    background: #e4e4e4;
+    border-radius: 50%;
+}
+
+.moniter {
+    width: 250px;
+    height: 400px;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+}
+
+.instruction {
+    font-size: 22px;
+    margin: 0;
+    padding: 15px 0;
+}
+
+.btn {
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    background-color: #333;
+    border: 3px solid #e4e4e4;
+    border-radius: 10px;
+    color: #e4e4e4;
+    font-size: 20px;
+}
+
+.input {
+    width: 230px;
+    height: 40px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+.output {
+    width: 230px;
+    height: 300px;
+    font-size: 22px;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.output-text {
+    font-size: 22px;
+    width: 230px;
+    margin: 9px 0;
+}
+
+.btn:hover {
+    background: linear-gradient(180deg, #e4e4e4 30%, #a4a4a4);
+    color: #000;
+    cursor: pointer;
+}
+
