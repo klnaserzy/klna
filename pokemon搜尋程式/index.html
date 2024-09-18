@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Pokémon Search App</title>
+    </head>
+    <body>
+        <h1>Welcome to the Pokémon world</h1>
+        <div class="container">
+            <p class="instruction">Search for Pokémon Name or ID:</p>
+            <input id="search-input" type="text" required/>
+            <button id="search-button">Search</button>
+            <div class="pokemon-exterior">
+                <div class="nameAndId">
+                    <span id="pokemon-name" class="inline-block"></span>
+                    <span id="pokemon-id" class="inline-block"></span>
+                </div>
+                <div class="weightAndHeight">
+                    <span id="weight" class="inline-block"></span>
+                    <span id="height" class="inline-block"></span>
+                </div>
+                <div id="pokemon-img-container"></div>
+                <div id="types">
+                </div>
+            </div>
+            <div class="ability">
+                <div class="abilityContainer">
+                    <span class="abilityTitle"><strong>Base</strong></span>
+                    <span class="abilityData"><strong>Stats</strong></span>
+                </div>
+                <div class="abilityContainer">
+                    <span class="abilityTitle">HP:</span>
+                    <span id="hp" class="abilityData"></span>
+                </div>
+                <div class="abilityContainer">
+                    <span class="abilityTitle">Attack:</span>
+                    <span id="attack" class="abilityData"></span>
+                </div>
+                <div class="abilityContainer">
+                    <span class="abilityTitle">Defense:</span>
+                    <span id="defense" class="abilityData"></span>
+                </div>
+                <div class="abilityContainer">
+                    <span class="abilityTitle">Sp. Attack:</span>
+                    <span id="special-attack" class="abilityData"></span>
+                </div>
+                <div class="abilityContainer">
+                    <span class="abilityTitle">Sp. Defense:	</span>
+                    <span id="special-defense" class="abilityData"></span>
+                </div>
+                <div class="abilityContainer">
+                    <span class="abilityTitle">Speed:</span>
+                    <span id="speed" class="abilityData"></span>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
